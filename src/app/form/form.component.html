@@ -1,0 +1,23 @@
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Nombre:</label>
+            <input [(ngModel)]="cliente.nombre" type="text" class="form-control" name="nombre" placeholder="Nombre Del Cliente">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Telefono:</label>
+            <input [(ngModel)]="cliente.telefono" type="text" class="form-control" name="telefono" placeholder="Telefono Del Cliente">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Cupo:</label>
+            <input [(ngModel)]="cliente.idparqueadero" type="text" class="form-control" name="idparqueadero" placeholder="Cupo">
+        </div>
+    </div>
+    <div class="form-row">
+        <button (click)="guardarCliente()" type="submit" class="btn btn-primary">Crear Paciente</button>
+    </div>
+</form>
